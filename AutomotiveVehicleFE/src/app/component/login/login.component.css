@@ -1,0 +1,79 @@
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 48, 37, 0.5)), url(src\assets\LOGIN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: aliceblue;
+    height: 150%;
+    padding-bottom: 13%;
+}
+h1{
+    position: relative;
+    left: 19%;
+    font-size: 300%;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1%;
+    padding-top: 6%;
+    padding-bottom: 05%;
+    color: white;
+    font-weight: 600;
+    font-stretch: ultra-expanded;
+  
+  }
+
+.blue{
+    columns: 1;
+    grid-row: span;
+    padding: 2%;
+    background-color: darkslategrey;
+    width: 45%;
+    position: relative;
+    left: 5%;
+    border-radius: 200px;
+
+}
+.in{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    line-height: 50%;
+    border-radius: 50%;
+}
+.puts{
+    margin-top: 2%;
+    height: 10%;
+    width:50%;
+    align-self: center;
+}
+label{
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    color: aliceblue;
+    align-self: center;
+}
+
+.btn{
+    font-size: 150%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 07%;
+  }
+.login{
+    text-align: left;
+    position: relative;
+    left: 15%;
+    top: 18%;
+  }
+.line{
+    height: 2px;
+    position: relative;
+    left: 25%;
+  }
+.headding2{
+    text-align:center ;
+    margin-top: 4%;
+}

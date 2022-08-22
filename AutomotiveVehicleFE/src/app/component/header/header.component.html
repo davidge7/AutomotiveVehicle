@@ -1,0 +1,22 @@
+<!-- <p>header works!</p> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="" class="navbar-brand" style="color:white;">A U T O M O T I V E -- V E H I C L E</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+       <ul class="navbar-nav mr-auto">
+
+          <a  routerLink="/signup" class="btn btn-primary tooltips" style="font-weight: 600; margin: 0 4px; color: white;" data-original-title="Signup">Signup</a>
+          <a  routerLink="/login" class="btn btn-primary tooltips" style="font-weight: 600; margin: 0 4px; color: white;" data-original-title="Login">Login</a>
+          <a (click)="mycart()" class="btn btn-warning tooltips" style="font-weight: 600; margin: 0 4px;" data-original-title="Cart"><i style="color:black;" class="fa fa-shopping-cart" aria-hidden="true">My Cart</i></a>
+          <!-- <a routerLink="/editprofile" class="btn btn-primary tooltips" style="font-weight: 600; margin: 0 4px;" data-original-title="editprofile"><i class="fa fa-user" aria-hidden="true">Add Car</i></a> -->
+          <a  href = "" (click)="logout()" class="btn btn-danger tooltips" style="font-weight: 600; margin: 0 4px; color: white;" data-original-title="Logout">Log Out</a>
+          <!-- <a  routerLink="/searchAllUsers" class="btn btn-secondary tooltips" style="font-weight: 600; margin: 0 4px; color: white;" data-original-title="User List">All Users</a> -->
+       </ul>
+    </div>
+  </nav>
+
+
+  <!-- *ngIf="role!=='ROLE_ADMIN' && role!=='ROLE_USER'"
+*ngIf="role==='ROLE_ADMIN' || role==='ROLE_USER'"  -->

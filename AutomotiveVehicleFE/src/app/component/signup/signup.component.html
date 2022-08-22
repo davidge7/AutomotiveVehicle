@@ -1,0 +1,39 @@
+<!-- <p>signup works!</p> -->
+
+<div class="container">
+    <h2 class="headding">Sign Up Form</h2>
+    <form [formGroup]="signupFormGroup" (ngSubmit)="sendSignupData()" class="flex-container">
+        <div class="blue">
+            <h2 style="text-align:center ;"> Please Enter the follwing information To Register</h2>
+            <div class="in">
+                <label>Name </label>
+                <input class="puts" type="text" formControlName="userName">
+            </div>
+            <div class="in">
+                <label>Email-id </label>
+                <input class="puts" type="email" formControlName="emailId">
+            </div>
+            <div class="in">
+                <label>Password </label>
+                <input class="puts" type="password" formControlName="password">
+            </div>
+            <hr class="col-6 line">
+
+            <div >
+                <input class="btn btn-success" type="submit" [disabled]="signupFormGroup.invalid" value="Signup"/>
+            </div>
+        </div>
+       <!-- <div class="error-message">
+            <div *ngIf="emailId.invalid">
+                **Email-id is required
+            </div>   
+            <div *ngIf="password.invalid">
+                **Password is required
+            </div>  
+        </div>  -->
+    </form>
+    <!-- <div id="submitResponse">{{messageOnSubmit}}</div> -->
+
+    <h2 class="login" style="text-align: center ;"> Already an User. <a href="/login">Click Here</a> To Log In</h2>
+
+</div>

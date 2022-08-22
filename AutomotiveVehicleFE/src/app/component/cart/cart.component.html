@@ -1,0 +1,62 @@
+<!-- <p>cart works!</p> -->
+
+<ng-container *ngIf="vehiclesInCart.length != 0">
+    <div class="card-table">
+        <div class="cart-vehicle">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">Sr.No</th>
+                        <th style="width: 10%;">Model</th>
+                        <th class="img">Image</th>
+                        <th style="width: 10%;">Company</th>
+                        <th style="width: 25%;">Description</th>
+                        <th style="width: 10%;">Total</th>
+                        <th style="width: 10%;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let vehicle of vehiclesInCart; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{vehicle.modelName}}</td>
+                        <td><img src="{{vehicle.imageUrl}}" alt="vehicle images"></td>
+                        <td>{{vehicle.company}}</td>
+                        <td>{{vehicle.description}}</td>
+                        <td>{{vehicle.price}}</td>
+                        <td>
+                            <button (click)="deleteFromCart(vehicle.modelName)" class="btn btn-danger"><i class="fa fa-trash">DELETE</i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <div style="float:right; margin-right: 25px;">
+                                <h4>Grand Total : {{grandTotal}} INR</h4>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td><button routerLink="" class="btn btn-primary">Shop More</button></td>
+                        <td><button style="margin-right: 25px;" class="btn btn-success">Checkout</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="vehiclesInCart.length == 0">
+    <div class="emptyCart">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/confusing-woman-due-to-empty-cart-4558760-3780056.png" alt="no items">
+            <h4>Your cart is empty!</h4>
+            <h6>Add items to it now</h6>
+            <button routerLink="" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
+

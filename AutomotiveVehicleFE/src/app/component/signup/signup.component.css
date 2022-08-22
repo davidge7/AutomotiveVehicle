@@ -1,0 +1,77 @@
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 48, 37, 0.5)), url(src\assets\signup.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: aliceblue;
+    align-items: center;
+    padding-bottom: 0.5%;
+}
+
+.headding{
+    position: relative;
+    left: 39%;
+    font-size: 300%;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1%;
+    padding-top: 2%;
+    color: white;
+    font-weight: 600;
+    font-stretch: ultra-expanded;
+
+}
+
+.blue{
+    columns: 1;
+    grid-row: span;
+    padding: 2%;
+    background-color: dimgray;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 21%;
+    border-radius: 20px;
+    padding-top: 2%;
+}
+.in{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    line-height: 50%;
+    border-radius: 50%;
+}
+.puts{
+    margin-top: 2%;
+    height: 10%;
+    width:50%;
+    align-self: center;
+}
+label{
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    color: aliceblue;
+    align-self: center;
+}
+.btn{
+    font-size: 150%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    color: whitesmoke;
+}
+.line{
+    height: 2px;
+    position: relative;
+    left: 25%;
+}
+.login{
+
+    /* border: 5px solid white; */
+    margin-bottom: 5%;
+}

@@ -1,0 +1,13 @@
+ul{
+    position: relative;
+    left: 60%;
+    padding-bottom: 2%;
+
+}
+.navbar-brand{
+    font-weight: 900;
+    font-size: 250%;
+    padding: 1%;
+    padding-bottom: 2%;
+    margin-left: 1%;
+}

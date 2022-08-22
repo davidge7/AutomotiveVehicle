@@ -1,0 +1,38 @@
+<!-- <p>login works!</p> -->
+<!-- (ngSubmit)="loginCheck()" -->
+
+<div class="container">
+    <h1 class="headding">Login Form</h1>
+    <form [formGroup]="loginFormGroup"  class="flex-container" (ngSubmit)="loginCheck()">
+        <div class="blue">
+            <h2 class="headding2">Please Enter your Valid Email And Password</h2>
+
+            <div class="in">
+                <label>Email-id </label>
+                <input class="puts col-12" type="email" formControlName="emailId">    <!-- pattern=".+@niit\.com" -->
+            </div>
+            <div class="in">
+                <label>Password </label>
+                <input  class="puts col-12" type="password" formControlName="password">
+            </div>
+            <hr class="col-6 line">
+
+           <div>
+            <input class="btn btn-success" type="submit" [disabled]="loginFormGroup.invalid" value="Login" >
+           </div>
+        </div>
+        <!-- <div class="error-message">
+            <div *ngIf="emailId.invalid">
+                **Email-id is required
+            </div>   
+            <div *ngIf="password.invalid">
+                **Password is required
+            </div>  
+        </div>  -->
+    </form>
+    <!-- <div id="submitResponse">{{messageOnSubmit}}</div> -->
+
+    <h2 class="login">Not an User. <a href="/signup">Click Here</a> To Register</h2>
+</div>
+
+

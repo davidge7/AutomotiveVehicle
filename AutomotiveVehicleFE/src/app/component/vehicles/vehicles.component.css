@@ -1,0 +1,34 @@
+.img-fluid{
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
+}
+.card{
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color: gray;
+    
+}
+.brand{
+    font-weight: 900;
+    font-size: larger;
+    columns: White;
+}
+
+.title{
+    font-size: x-large;
+    font-style: oblique;
+    color: azure;
+}
+.list-group-item{
+    font-size: medium;
+    font-weight: 700;
+}
+.btn{
+    align-self: center;
+    margin-bottom: 4%;
+}
+.card-body{
+    align-self: center;
+}
+
